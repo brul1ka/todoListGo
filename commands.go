@@ -92,6 +92,8 @@ func checkForCommands(command string) {
 		} else {
 			printErrorMessage("Task not found")
 		}
+	case "help":
+		fmt.Println(helpText)
 
 	default:
 		printErrorMessage("Command \"" + os.Args[1] + "\" not found")

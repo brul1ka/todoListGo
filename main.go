@@ -13,10 +13,9 @@ var errColor = color.New(color.BgRed, color.FgBlack)
 
 func main() {
 	if len(os.Args) < 2 {
-		bold.Println("USAGE:\ntodo command...")
+		bold.Println("USAGE:\ntodo <command> [arguments]\n'help' to list commands")
 		return
 	}
-
 	command := os.Args[1]
 	checkForCommands(command)
 }
